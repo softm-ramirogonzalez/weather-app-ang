@@ -1,0 +1,12 @@
+<h2>Packages List</h2>
+
+<shared-list [items]="paquetes" [templateRef]="paqueteTemplate"></shared-list>
+
+<ng-template #paqueteTemplate let-paquetes>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">{{ paquetes.name }}</h5>
+      <p class="card-text">{{ paquetes.description  }}</p>
+    </div>
+  </div>
+</ng-template>

@@ -1,0 +1,12 @@
+<h2>User List</h2>
+
+<shared-list [items]="users" [templateRef]="userTemplate"></shared-list>
+
+<ng-template #userTemplate let-user>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">{{ user.name }}</h5>
+      <p class="card-text">{{ user.company.catchPhrase }}</p>
+    </div>
+  </div>
+</ng-template>
